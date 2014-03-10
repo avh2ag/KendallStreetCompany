@@ -2,29 +2,55 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-
-		<title>Kendall Street Company </title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/> 
+		<link rel="stylesheet" href="css/kstreetco.css" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<title>Kendall Street Company</title>
 	</head>
 
 	<body>
-<div class="container">
+	
+<div class="container" id="wrapper">
 	<div id="topNav"class="navbar">
-		<div class="container">
-			<u1 class="nav">
-				<li class="active"> <a href='#'>Home </a></li>
+		<div class="container kstreet_nav">
+			<u1 class="nav edit_nav" style="float:right; ">
+				<li> <a href='#'><span class="main_nav">Home </span></a></li>
 				<li> <a href='#'>Music</a> </li>
 				<li> <a href='#'>Buzz</a> </li>
 				<li> <a href='#'>Tour Dates</a> </li>
 				<li> <a href ='#'> Contact Us</a> </li>
-
 			</u1>
 		</div>
-	</div> 
+	</div>
+		<div id="header_image"class="hero-unit kstreet_banner">
+    		<h1 class="custom_h1">Kendall Street Company</h1>
+ 		</div>
+ 	<div class="row">
+ 		<!-- For Upcoming Shows -->
+ 		<div class="span4" id="upcoming_shows">
+ 			<div class="title_header">
+ 				<h3> Upcoming Shows </h3>
+ 			</div>
+ 			<div class="display_shows">
+ 				<ul class="list-inline">
+ 					<li> <span class="main_nav">Show Date, Location </span> </li>
+ 					<li> <span class="main_nav">Show Date, Location </span> </li>
+ 					<li> <span class="main_nav">Show Date, Location </span> </li>
+ 				</u1>
+ 			</div>
+ 			<!-- Pull Show Dates Dynamically -->
+ 		</div>
+ 	</div>
+<!-- End Wrapper -->
 </div>
 
-<!-- Load external stylesheets/js-- >
-<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css"/>
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="bootstrap/js/bootsrap.js"></script> 
+<script src='js/bootstrap.js'></script>
+<script src='js/backstretch.js'></script>
+
+<script>
+//Set the background image, put link here
+ 	$.backstretch("http://www.labmogul.com/media/500-Kendall-Street.jpg");
+
+ </script>
 	</body>
 </html>

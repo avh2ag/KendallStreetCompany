@@ -1,0 +1,46 @@
+/*kstreetco.css*/
+/*
+Need to decide color scheme -- replace #000/#f9f9f9
+*/
+body{
+	background-color: #001;
+	height:100%;
+	width:100%;
+}
+
+#wrapper{
+	opacity: .85;
+}
+
+.kstreet_banner{
+	background-color: #f9f9f9;
+	opacity: .95;
+}
+.kstreet_nav{
+	background-color: transparent;
+}
+#upcoming_shows{
+	background-color: #f9f9f9;
+	color: #000;
+	border-radius: 3px;
+}
+.edit_nav{
+color: #fff;
+border-radius: 3px;
+float:right;
+}
+.title_header{
+	border-bottom: 1px dotted #000;
+}
+.navbar .nav > li > a {
+	text-shadow: none;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 7px;
+	color: #001;
+	background-color: #f9f9f9;
+}
+.navbar .nav > li > a:hover {
+background-color: #000;
+color: #fff;
+}
