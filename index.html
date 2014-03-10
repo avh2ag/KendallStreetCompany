@@ -9,47 +9,83 @@
 	</head>
 
 	<body>
-	
-<div class="container" id="wrapper">
-	<div id="topNav"class="navbar">
+<div id="nav_wrapper" class="main-menu-wrapper sticky">
+<div id="topNav"class="navbar sticky-nav">
 		<div class="container kstreet_nav">
 			<u1 class="nav edit_nav" style="float:right; ">
-				<li> <a href='#'><span class="main_nav">Home </span></a></li>
+				<li> <a href='#home'><span class="main_nav">Home </span></a></li>
 				<li> <a href='#'>Music</a> </li>
 				<li> <a href='#'>Buzz</a> </li>
 				<li> <a href='#'>Tour Dates</a> </li>
 				<li> <a href ='#'> Contact Us</a> </li>
 			</u1>
 		</div>
-	</div>
+	</div>	
+</div>
+<!-- Homepage -->
+<div class="container" id="wrapper">
+
 		<div id="header_image"class="hero-unit kstreet_banner">
-    		<h1 class="custom_h1">Kendall Street Company</h1>
+    		<h1 class="banner_header">Kendall Street Company</h1>
  		</div>
- 	<div class="row">
+ 	<div id="home" class="row">
  		<!-- For Upcoming Shows -->
  		<div class="span4" id="upcoming_shows">
  			<div class="title_header">
- 				<h3> Upcoming Shows </h3>
+ 				<h4>Upcoming Shows</h4>
  			</div>
+ 			<!-- Pull Show Dates Dynamically -->
  			<div class="display_shows">
  				<ul class="list-inline">
  					<li> <span class="main_nav">Show Date, Location </span> </li>
  					<li> <span class="main_nav">Show Date, Location </span> </li>
  					<li> <span class="main_nav">Show Date, Location </span> </li>
  				</u1>
- 			</div>
- 			<!-- Pull Show Dates Dynamically -->
+ 			</div> 			
+ 		</div>
+ 		<!--Music Player -->
+ 		<div class="span8" style="opacity: .99;">
+ 			<iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3083407065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://louissmith.bandcamp.com/album/mixed-bag">Mixed Bag by Louis Smith</a></iframe>
  		</div>
  	</div>
-<!-- End Wrapper -->
+ 	<!-- End Homepage -->
 </div>
+<br>
+<div class ="container" id="members">
+ 	<div class="row">
+ 		<div class="span4" name="brian">
+ 			<div class="title_header">
+ 				<h4 style="text-align: center;">Brian Roy - Bass</h4>
+ 			</div>
+ 			<div>
+ 			</div>
+ 		</div>
+ 		<div class="span4" name="louis">
+ 			<div class="title_header">
+ 				<h4 style="text-align: center;">Louis Smith - Vocals/Guitar</h4>
+ 			</div>
+ 		</div>
+ 		<div class="span4" name="andrew">
+ 			<div class="title_header">
+ 				<h4 style="text-align: center;">Andrew Drehoff - Sax</h4>
+ 			</div>
+ 		</div>
+ 	</div>
+</div>
+
 
 <script src='js/bootstrap.js'></script>
 <script src='js/backstretch.js'></script>
 
 <script>
+ $.backstretch([
+      "http://dl.dropbox.com/u/515046/www/outside.jpg"
+    , "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg"
+    , "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+  ], {duration: 1200, fade: 750});
 //Set the background image, put link here
- 	$.backstretch("http://www.labmogul.com/media/500-Kendall-Street.jpg");
+ 	//figure out if valid for use;
+ 	$("#header_image").backstretch("http://f0.bcbits.com/img/0000964276_100.png");
 
  </script>
 	</body>
