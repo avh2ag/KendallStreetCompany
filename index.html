@@ -9,26 +9,32 @@
 	</head>
 
 	<body>
-<div id="nav_wrapper" class="main-menu-wrapper sticky">
-<div id="topNav"class="navbar sticky-nav">
-		<div class="container kstreet_nav">
-			<u1 class="nav edit_nav" style="float:right; ">
+<div id="nav_wrapper" class="main-menu-wrapper sticky ">
+<div id="topNav"class="navbar navbar-fixed-top">
+	<div class="row" id="header_bg">
+		<div class="span7">
+			<h1 style="margin-left:3%">Kendall Street Company</h1>
+		</div>
+		<div id="main_nav" class="navbar-inner kstreet_nav">
+			<u1 class="nav edit_nav main-menu large nav sf-menu sf-js-enabled" style="float:right; margin-top:.7%; ">
 				<li> <a href='#home'><span class="main_nav">Home </span></a></li>
 				<li> <a href='#'>Music</a> </li>
 				<li> <a href='#'>Buzz</a> </li>
 				<li> <a href='#'>Tour Dates</a> </li>
-				<li> <a href ='#'> Contact Us</a> </li>
+				<li> <a href='#members'>Members </a> </li>
+				<li> <a href ='#'>Contact Us</a> </li>
 			</u1>
 		</div>
 	</div>	
 </div>
+</div>
 <!-- Homepage -->
-<div class="container" id="wrapper">
+<div class="container" id="home">
 
 		<div id="header_image"class="hero-unit kstreet_banner">
     		<h1 class="banner_header">Kendall Street Company</h1>
  		</div>
- 	<div id="home" class="row">
+ 	<div class="row">
  		<!-- For Upcoming Shows -->
  		<div class="span4" id="upcoming_shows">
  			<div class="title_header">
@@ -48,29 +54,82 @@
  			<iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3083407065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://louissmith.bandcamp.com/album/mixed-bag">Mixed Bag by Louis Smith</a></iframe>
  		</div>
  	</div>
- 	<!-- End Homepage -->
+ 	<br>
+ 	<div class="container" id="media">
+ 		<div class="row">
+ 			<div class="span2">
+ 				<h3> Follow Us: </h3>
+ 			</div>
+ 			<div class="span1">
+ 				<a href="http://www.youtube.com/user/louissmithband?feature=watch" target="_blank">
+ 					<img src="img/youtube.png" class="img-thumbnail" alt="youtube">
+ 				</a>
+ 			</div>
+ 			<div class="span1">
+ 				<a href="https://soundcloud.com/" target="_blank">
+ 					<img src="img/soundcloud.png" class="img-thumbnail" alt="youtube">
+ 				</a>
+ 			</div>
+ 			<div class="span1">
+ 				<a href="https://www.facebook.com/pages/Louis-Smith-Band/150921698355827" target="_blank">
+ 					<img src="img/facebook.png" class="img-thumbnail" alt="youtube">
+ 				</a>
+ 			</div>
+
+ 		</div>
+ 	</div>
+ 	<!-- End Home -->
 </div>
 <br>
+<!--Music -->
+<div class="container" id="music">
+	<div class="row">
+
+	</div>
+<!--End Music -->
+</div>
+
+<!-- Members -->
 <div class ="container" id="members">
  	<div class="row">
  		<div class="span4" name="brian">
- 			<div class="title_header">
+ 			<div>
  				<h4 style="text-align: center;">Brian Roy - Bass</h4>
  			</div>
- 			<div>
+ 			<div class="thumbnail">
+      			<img class="img-circle" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7URh6MPzXuBxho1jiGhYWmzDJ-ay-9wqWiklHbdjEoAxMCkJO" alt="Brian Roy - Bass">
+    			<div class="caption">
+    				<p>Brian Roy plays the Bass. He hired his friend and fellow Degen to help build this website. His friend has one rule of web dev - no pants allowed. </p>
+    			</div>
+    			
  			</div>
  		</div>
  		<div class="span4" name="louis">
- 			<div class="title_header">
+ 			<div>
  				<h4 style="text-align: center;">Louis Smith - Vocals/Guitar</h4>
+ 			</div>
+ 				<div class="thumbnail">
+      			<img class="img-circle" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7URh6MPzXuBxho1jiGhYWmzDJ-ay-9wqWiklHbdjEoAxMCkJO" alt="Brian Roy - Bass">
+    			<div class="caption">
+    				<p>Brian Roy plays the Bass. He hired his friend and fellow Degen to help build this website. His friend has one rule of web dev - no pants allowed. </p>
+    			</div>
+    			
  			</div>
  		</div>
  		<div class="span4" name="andrew">
- 			<div class="title_header">
+ 			<div>
  				<h4 style="text-align: center;">Andrew Drehoff - Sax</h4>
+ 			</div>
+ 				<div class="thumbnail">
+      			<img class="img-circle" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7URh6MPzXuBxho1jiGhYWmzDJ-ay-9wqWiklHbdjEoAxMCkJO" alt="Brian Roy - Bass">
+    			<div class="caption">
+    				<p>Brian Roy plays the Bass. He hired his friend and fellow Degen to help build this website. His friend has one rule of web dev - no pants allowed. </p>
+    			</div>
+    			
  			</div>
  		</div>
  	</div>
+ <!-- End Members -->
 </div>
 
 
@@ -85,7 +144,9 @@
   ], {duration: 1200, fade: 750});
 //Set the background image, put link here
  	//figure out if valid for use;
- 	$("#header_image").backstretch("http://f0.bcbits.com/img/0000964276_100.png");
+ 	$("#header_image").backstretch("img/headerbackground.png");
+ 	$("#header_bg").backstretch("img/headerbackground.png");
+ //	$("#header_image").backstretch("http://f0.bcbits.com/img/0000964276_100.png");
 
  </script>
 	</body>
