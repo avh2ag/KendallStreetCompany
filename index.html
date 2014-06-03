@@ -55,7 +55,7 @@
  					<h3>Upcoming Shows</h3>
  				</div>
  			<!-- Pull Show Dates Dynamically -->
- 				<div class="display_shows">
+ 				<div class="display_shows" id="show-list">
  					<ul class="list-inline">
  						<li> <span class="main_nav"> April 11th, Boylan Heights: 10:30-1:30 </span> </li>
  					</u1>
@@ -87,13 +87,22 @@
  					<a href="https://twitter.com/KendallStreetCo" target="_blank"> 
  						<img src="img/twitter.png" class="img-thumbnail" alt="Twitter"></a>
  				</div>
+            </div>
  		</div>
  		<!-- BEGINS Audio Player -->
  		<br>
- 			<div class="row">
-                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+ 			<div class="row" id="music">
+                <div class="span5" id="ep" style="margin-left: 5%;"> 
+                    <div class="thumbnail" >                            
+                             <img class="img-square" src="img/kstreetcomain.jpg" alt="Kendall Street Company - EP" s>
+                            <div class="caption">
+                                 <p> Kendall Street Company's debut EP was recorded at Blue Sprocket Sound in Harrisonburg, Virginia in March, 2014 and is due for a hard-copy release (including a fourth bonus track) in the late summer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div id="jquery_jplayer_1" class="jp-jplayer"> </div>
 
-                <div id="jp_container_1" class="jp-audio span8">
+                <div id="jp_container_1" class="jp-audio span6">
                         <div class="jp-type-playlist">
                                 <div class="jp-gui jp-interface">
                                         <ul class="jp-controls">
@@ -136,7 +145,7 @@
                                 </div>
                         </div>
                 </div>
-              </div>
+              
                         <!-- ENDS Audio Player -->
  	</div>
  	<br>
@@ -151,7 +160,7 @@
 </div>
 <div class ="container" id="members">
 	
- 	<div class="row" id="boxes">		
+ 	<div class="row" id="member-boxes">		
  		<div class="span5" name="louis">
  			<div>
  				<h4 style="text-align: center;">Louis Smith - Vocals/Guitar</h4>
@@ -159,7 +168,7 @@
  				<div class="thumbnail">
       			<img class="img-circle" src="img/website_photos/Louis_Pic.jpg" alt="Louis Smith" style="height:225px; width:220px;">
     			<div class="caption">
-    				<p> Born and raised in Virginia Beach, Louis Smith moved to Charlottesville in 2012 and founded Kendall Street Company the following year..</p>
+    				<p> Born and raised in Virginia Beach, Louis Smith moved to Charlottesville in 2012 and founded Kendall Street Company the following year.</p>
     			</div>
     			
  			</div>
@@ -234,9 +243,12 @@
 <script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
 <script src='js/bootstrap.js'></script>
 <script src='js/backstretch.js'></script>
-
+<script src="js/updateshows.js"> </script>
+<script src="js/members.js"></script>
 <script>
 //Set the background image, put link here
+    update_shows();
+    update_members();
  	//figure out if valid for use;
 	$(".fake-body").backstretch("img/website_photos/background.jpg");
  	//$("#header_image").backstretch("img/headerbackground.png");

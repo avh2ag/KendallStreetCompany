@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/> 
+		<link href="css/jplayer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/kstreetco.css" type="text/css"/>
+		<link rel="icon" href="img/favicon.png">
+		<link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+		<title>Kendall Street Company</title>
+	</head>
+
+	<body>
+
+<div id="nav_wrapper" class="main-menu-wrapper sticky ">
+
+<div id="topNav"class="navbar navbar-fixed-top">
+	<div class="row" id="header_bg">
+		<div class="span7">
+			<h1 style="margin-left:3%">Kendall Street Company</h1>
+		</div>
+		<div id="main_nav" class="navbar-inner kstreet_nav">
+			<u1 class="nav edit_nav main-menu large nav sf-menu sf-js-enabled" style="float:right; margin-top:.7%; ">
+				<li> <a href='#home'><span class="main_nav">Home </span></a></li>
+				<li> <a href='#music'>Music</a> </li>
+				<!-- <li> <a href='#'>Buzz</a> </li>
+				 <li> <a href='#'>Tour Dates</a> </li> -->
+				<li> <a href='#members-link'>Members </a> </li>
+				<li> <a href ='#contact_us'>Contact Us</a> </li>
+			</u1>
+		</div>
+	</div>	
+</div>
+</div>
+<!-- Banner -->
+<div class="container" id="home" style="top: 0;">
+	<img class="center" src="img/website_photos/banner.png" style="height:75%; width:65%"/> 
+	<h2 class="gold">Kendall Street Company </h2>
+</div>
+<!-- Homepage -->
+
+<div class="fake-body">
+<div class="container">
+<!-- Switching so that it's a banner slideshow -->
+		<div id="header_image"class="page-header kstreet_banner">
+    		
+    	</div>
+     <div class="container">
+ 		<div class="row" style="margin-left: 0;">
+ 		<!-- For Upcoming Shows -->
+ 			<div class="span4" id="upcoming_shows">
+ 				<div class="title_header">
+ 					<h3>Upcoming Shows</h3>
+ 				</div>
+ 			<!-- Pull Show Dates Dynamically -->
+ 				<div class="display_shows" id="show-list">
+ 					<ul class="list-inline">
+ 						<li> <span class="main_nav"> April 11th, Boylan Heights: 10:30-1:30 </span> </li>
+ 					</u1>
+ 				</div> 			
+ 			</div>
+ 		<!--Music Player -->
+ 		<!-- Put a ghost div here for spacing -->
+ 			
+ 			<div class="span7" id="icon-container">
+ 				<div class="span2" id="follow-label">
+ 					<h3>Follow Us: </h3>
+ 				</div>
+ 				<div class="span1">
+ 					<a href="http://www.youtube.com/user/louissmithband?feature=watch" target="_blank">
+ 						<img src="img/youtube.png" class="img-thumbnail" alt="youtube">
+ 					</a>
+ 				</div>
+ 				<div class="span1">
+ 					<a href="https://soundcloud.com/kendall-street-company" target="_blank">
+ 						<img src="img/soundcloud.png" class="img-thumbnail" alt="soundcloud">
+ 					</a>
+ 				</div>
+ 				<div class="span1">
+ 					<a href="https://www.facebook.com/KendallStreetCo" target="_blank">
+ 						<img src="img/facebook.png" class="img-thumbnail" alt="Facebook">
+ 					</a>
+ 				</div>
+ 				<div class="span1">
+ 					<a href="https://twitter.com/KendallStreetCo" target="_blank"> 
+ 						<img src="img/twitter.png" class="img-thumbnail" alt="Twitter"></a>
+ 				</div>
+            </div>
+ 		</div>
+ 		<!-- BEGINS Audio Player -->
+ 		<br>
+ 			<div class="row">
+                <div class="span5" id="ep" style="margin-left: 5%;"> 
+                    <div class="thumbnail" >                            
+                             <img class="img-square" src="img/kstreetcomain.jpg" alt="Kendall Street Company - EP" s>
+                            <div class="caption">
+                                 <p> Kendall Street Company's debut EP was recorded at Blue Sprocket Sound in Harrisonburg, Virginia in March, 2014 and is due for a hard-copy release (including a fourth bonus track) in the late summer.</p>
+                            </div>
+                    </div>
+                </div>
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+                <div id="jp_container_1" class="jp-audio span6">
+                        <div class="jp-type-playlist">
+                                <div class="jp-gui jp-interface">
+                                        <ul class="jp-controls">
+                                                <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                                                <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                                <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                                <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                                                <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                                <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                                <div class="jp-seek-bar">
+                                                        <div class="jp-play-bar"></div>
+                                                </div>
+                                        </div>
+                                        <div class="jp-volume-bar">
+                                                <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <div class="jp-time-holder">
+                                                <div class="jp-current-time"></div>
+                                                <div class="jp-duration"></div>
+                                        </div>
+                                        <!-- <ul class="jp-toggles">
+                                                <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+                                                <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                                                <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                                <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li> -->
+                                        </ul>
+                                </div>
+                                <div class="jp-playlist">
+                                        <ul>
+                                                <li></li>
+                                        </ul>
+                                </div>
+                                <div class="jp-no-solution">
+                                        <span>Update Required</span>
+                                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                </div>
+                        </div>
+                </div>
+              
+                        <!-- ENDS Audio Player -->
+ 	</div>
+ 	<br>
+ 	<!-- End Home -->
+ 	<br>
+</div>
+<br>
+
+<!-- Members -->
+<div class="title-bg" id="members-link">
+		<h2>Members</h2>
+</div>
+<div class ="container" id="members">
+	
+ 	<div class="row" id="boxes">		
+ 		<div class="span5" name="louis">
+ 			<div>
+ 				<h4 style="text-align: center;">Louis Smith - Vocals/Guitar</h4>
+ 			</div>
+ 				<div class="thumbnail">
+      			<img class="img-circle" src="img/website_photos/Louis_Pic.jpg" alt="Louis Smith" style="height:225px; width:220px;">
+    			<div class="caption">
+    				<p> Born and raised in Virginia Beach, Louis Smith moved to Charlottesville in 2012 and founded Kendall Street Company the following year..</p>
+    			</div>
+    			
+ 			</div>
+ 		</div>
+ 		<div class="span5" name="brian">
+ 			<div>
+ 				<h4 style="text-align: center;">Brian Roy - Bass</h4>
+ 			</div>
+ 			<div class="thumbnail">
+      			<img class="img-circle" src="img/website_photos/Brian_Pic.jpg" alt="Brian Roy" style="height:225px; width:220px;">
+    			<div class="caption">
+    				<p>Brian Roy is a Charlottesville-based musician. He plays upright, electric, and acoustic basses and provides occasional backup vocals.</p>
+    			</div>
+    			
+ 			</div>
+ 		</div>
+ 		<div class="span5" name="andrew">
+ 			<div>
+ 				<h4 style="text-align: center;">Andrew Drehoff - Sax</h4>
+ 			</div>
+ 				<div class="thumbnail">
+      			<img class="img-circle" src="img/website_photos/Andrew_Pic.jpg" alt="Andrew Drehoff" style="height: 215px; width:207px;">
+    			<div class="caption">
+    				<p>Andrew Drehoff played the saxophone in Virginia Beach before moving to Charlottesville, where he provides Kendall Street Company with some of the best horn playing in town.</p>
+    			</div>
+    			
+ 			</div>
+ 		</div>
+ 		 <div class="span5" name="ryan">
+ 			<div>
+ 				<h4 style="text-align: center;">Ryan Wood - Drums</h4>
+ 			</div>
+ 				<div class="thumbnail">
+      			<img class="img-circle" src="img/website_photos/Ryan_Pic.jpg" alt="Ryan Wood" style="height: 225px; width: 220px;">
+    			<div class="caption">
+    				<p>Ryan Wood is a drummer from the Washington, DC metropolitan area. He moved to Charlottesville in 2011, joining Kendall Street Company two years later. </p>
+    			</div>
+    			
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <!-- End Members -->
+ <br>
+ <!-- Contact Us -->
+ <div class="title-bg">
+ <h2>Contact Us</h2>
+</div>
+ <div class="container">
+ 	<div class="row" id="contact_us">
+ 		<div class="span12">
+ 			<span>For booking info, please send: </span>
+ 			<div class="list-wrapper">
+ 				<u1 class="list-inline">
+ 					<li class="main_nav"> Your Name </li>
+ 					<li class="main_nav"> The Best Way to Reach You </li>
+ 					<li class="main_nav"> Address of Venue </li>
+ 					<li class="main_nav"> Any other information you think we need </li>
+ 				</u1>
+ 			</div>
+ 			<span> To: </span> <a href="mailto:booking@kendallstreetcompany.com">booking@kendallstreetcompany.com</a>
+ 		</div>
+ 	</div>
+ </div>
+ <br>
+ <br>
+</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
+<script src='js/bootstrap.js'></script>
+<script src='js/backstretch.js'></script>
+<script src="js/updateshows.js"> </script>
+<script>
+//Set the background image, put link here
+    update_shows();
+ 	//figure out if valid for use;
+	$(".fake-body").backstretch("img/website_photos/background.jpg");
+ 	//$("#header_image").backstretch("img/headerbackground.png");
+
+ 	//$("#header_image").cycle()
+ 	$("#header_image").backstretch([
+      "img/website_photos/slideshow-1.jpg"
+    , "img/website_photos/slideshow-2.jpg"
+    , "img/website_photos/slideshow-3.jpg", 
+  ], {duration: 4500, fade: 750});  
+$(document).ready(function(){
+
+        new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+        }, [
+                                {
+                        title:"Cars",
+                        mp3:"music/Cars.mp3"
+                },
+                {
+                        title:"Marty Song",
+                        mp3:"music/Marty Song.mp3"
+                },
+                {
+                        title:"Wasted (Explicit)",
+                        mp3:"music/Wasted (Explicit).mp3"
+                }
+    
+        ], {
+                swfPath: "jplayer",
+                supplied: "mp3",
+                wmode: "window"
+        });
+});
+ </script>
+	</body>
+</html>
